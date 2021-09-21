@@ -1,7 +1,7 @@
 {
-  "name": "get-ssl-certificate",
+  "name": "get-ssl-cert",
   "version": "2.3.3",
-  "description": "A micro-library that returns a website's SSL certificate",
+  "description": "A micro-library that returns a website's SSL certificate - Forked by Addramyr84 with needed fixes",
   "main": "index.js",
   "scripts": {
     "test": "nyc ./node_modules/.bin/mocha --reporter spec",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johncrisostomo/get-ssl-certificate.git"
+    "url": "git+https://github.com/Addramyr84/get-ssl-certificate.git"
   },
   "keywords": [
     "ssl",
@@ -21,9 +21,9 @@
   "author": "John Crisostomo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johncrisostomo/get-ssl-certificate/issues"
+    "url": "https://github.com/Addramyr84/get-ssl-certificate/issues"
   },
-  "homepage": "https://github.com/johncrisostomo/get-ssl-certificate#readme",
+  "homepage": "https://github.com/Addramyr84/get-ssl-certificate#readme",
   "devDependencies": {
     "chai": "4.1.2",
     "coveralls": "3.0.0",
