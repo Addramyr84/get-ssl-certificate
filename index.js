@@ -48,7 +48,7 @@ function handleRequest(options, detailed = false, resolve, reject) {
     var certificate = res.socket.getPeerCertificate(detailed);
 
     if (isEmpty(certificate) || certificate === null) {
-      reject({ message: 'The website did not provide a certificate' });
+      reject(new Error('The website did not provide a certificate'));
     } else {
       if (certificate.raw) {
         certificate.pemEncoded = pemEncode(certificate.raw.toString('base64'), 64);
@@ -71,7 +71,7 @@ function get(url, timeout, port, protocol, detailed) {
 
     if (timeout) {
       req.on('timeout', () => {
-        reject({ message: 'Request timed out.' });
+        reject(new Error('Request timed out.'));
         req.abort();
       });
     }
